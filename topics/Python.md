@@ -21,10 +21,19 @@ class Employees:
      self.last_name = last_name
      self.pay = pay
      
-emp1 = Employees ('Guy', 'Montag', 1000)
-print(emp1.__dict__)
+emp_1 = Employees ('Guy', 'Montag', 1000)
+print(emp_1.__dict__)
 
->> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
+>>> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
+```
+
+## classmethods and staticmethods
+- Regular methods automatically takes in the instance as the first argument
+```python
+def fullname(self):
+  return f{self.first_name} {self.last_name}
+fullname(emp_1)
+>>> 'Guy Montag'
 ```
 
 
