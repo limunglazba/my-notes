@@ -3,6 +3,7 @@
 ## Resources
 - [Corey Shafer's OOP tutorial on YT](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
 
+
 ## Class Variables[[1]](https://www.youtube.com/watch?v=BJ-VvGyQxho)
 - Class attributes can be **accessed through class itself or through class instances** 
 - When accessing an attribute through an instance, Python will __first check if an instance contains that attribute__. If it doesn't, it will check if its class (or a class it inherits from) contains it. [[1]](https://youtu.be/BJ-VvGyQxho?t=214)
@@ -27,6 +28,7 @@ print(emp_1.__dict__)
 >>> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
 ```
 
+
 ## classmethods and staticmethods[[1]](https://www.youtube.com/watch?v=rq8cL2XMM5M)
 - **Regular methods** automatically takes in the **instance as the first argument**
 ```python
@@ -44,6 +46,17 @@ def set_raise_amt(cls, amount):
 - **staticsmethod** has a decorator **@staticmethod** at the top and **don't pass anything automatically**
 - This means they behave like a normal function - they are included in the class because they have a logical connection with it
 - If the method doesn't uses the class or its instance, it should probably be a static method
+
+
+## Inheritance and subclasses
+- **Subclasses** inherits attributes and methods from the parent class, which we can then override or add new functionalities without affecting the parent class
+- **Method Resolution Order** defines the chain of inheritance in which order Python checks for attributes and methods (child \>\> parent \>\> generic object class) 
+
+
+
+
+
+
 
 # Type hints
 - [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
