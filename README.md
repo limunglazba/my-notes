@@ -5,4 +5,4 @@ software engineering notes
 
 # **Programming**
 ## **Python**
-- Object Oriented Programming
+- [Object Oriented Programming](https://github.com/limunglazba/my-notes/blob/master/topics/Python.md#class-variables)
