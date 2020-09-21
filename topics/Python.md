@@ -30,7 +30,7 @@ print(emp_1.__dict__)
 
 
 ## classmethods and staticmethods[[1]](https://www.youtube.com/watch?v=rq8cL2XMM5M)
-- **Regular methods** automatically takes in the **instance as the first argument**
+- **Regular methods** automatically take in the **instance as the first argument**
 ```python
 def fullname(self):
   return f'{self.first_name} {self.last_name}'
