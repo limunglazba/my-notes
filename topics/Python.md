@@ -50,9 +50,14 @@ def set_raise_amt(cls, amount):
 
 ## Inheritance and subclasses
 - **Subclasses** inherits attributes and methods from the parent class, which we can then override or add new functionalities without affecting the parent class
-- **Method Resolution Order** defines the chain of inheritance in which order Python checks for attributes and methods (child \>\> parent \>\> generic object class) 
-
-
+- **Method Resolution Order** defines the chain of inheritance in which order Python checks for attributes and methods (child \>\> parent \>\> generic object class)
+- Use **super()** for accessing methods of base classes:
+```python
+class Developer(Employee):
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
+        self.prog_lang = prog_lang
+```
 
 
 
