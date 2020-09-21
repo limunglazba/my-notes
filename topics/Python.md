@@ -27,7 +27,7 @@ print(emp_1.__dict__)
 >>> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
 ```
 
-## classmethods and staticmethods
+## classmethods and staticmethods[[1]](https://www.youtube.com/watch?v=rq8cL2XMM5M)
 - **Regular methods** automatically takes in the **instance as the first argument**
 ```python
 def fullname(self):
