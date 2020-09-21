@@ -23,6 +23,7 @@ class Employees:
      
 emp1 = Employees ('Guy', 'Montag', 1000)
 print(emp1.__dict__)
+
 >> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
 ```
 
