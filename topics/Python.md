@@ -35,8 +35,7 @@ def fullname(self):
 fullname(emp_1)
 >>> 'Guy Montag'
 ```
-- **Convert** regular method to classmethod: add a decorator **@classmethod** to the top
-- **classmethod** has **class as the first argument**
+- **classmethod** has a decorator **@classmethod** at the top and **class as the first argument**
 ```python
 @classmethod
 def set_raise_amt(cls, amount):
