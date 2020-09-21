@@ -6,3 +6,13 @@
 ## Class Variables
 - Class variables can be **accessed through class itself or through class instances** 
   - When accessing an attribute, Python will first check if an instance contains that attribute. If it doesn't, it will check if its class (or a class it inherits from) contains it. [[1]](https://youtu.be/BJ-VvGyQxho?t=214)
+
+### Attribute Access via __dict__
+- __dict__ is a special attribute of every object, containing all the attributes defined for the object itself. 
+- It maps the attribute name to its value.
+
+> >>> class Employees(self, first_name, last_name, pay):
+          self.first_name = first_name
+          self.last_name = last_name
+          self.pay = pay
+   >>>
