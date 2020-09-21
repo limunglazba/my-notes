@@ -11,8 +11,14 @@
 - __dict__ is a special attribute of every object, containing all the attributes defined for the object itself. 
 - It maps the attribute name to its value.
 
-> >>> class Employees(self, first_name, last_name, pay):
-          self.first_name = first_name
-          self.last_name = last_name
-          self.pay = pay
-   >>>
+```python
+class Employees:
+  def __init__(self, first_name, last_name, pay):
+     self.first_name = first_name
+     self.last_name = last_name
+     self.pay = pay
+     
+emp1 = Employees ('Guy', 'Montag', 1000)
+print(emp1.__dict__)
+>> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
+```
