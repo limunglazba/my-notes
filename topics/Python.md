@@ -28,14 +28,20 @@ print(emp_1.__dict__)
 ```
 
 ## classmethods and staticmethods
-- Regular methods automatically takes in the instance as the first argument
+- **Regular methods** automatically takes in the **instance as the first argument**
 ```python
 def fullname(self):
-  return f{self.first_name} {self.last_name}
+  return f'{self.first_name} {self.last_name}'
 fullname(emp_1)
 >>> 'Guy Montag'
 ```
-
+- **Convert** regular method to classmethod: add a decorator **@classmethod** to the top
+- **classmethod** has **class as the first argument**
+```python
+@classmethod
+def set_raise_amt(cls, amount):
+  cls.raise_amt = amount
+```
 
 # Type hints
 - [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
