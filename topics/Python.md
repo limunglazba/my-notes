@@ -4,8 +4,8 @@
 - [Corey Shafer's OOP tutorial on YT](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
 
 ## Class Variables
-- Class variables can be **accessed through class itself or through class instances** 
-  - When accessing an attribute, Python will __first check if an instance contains that attribute__. If it doesn't, it will check if its class (or a class it inherits from) contains it. [[1]](https://youtu.be/BJ-VvGyQxho?t=214)
+- Class attributes can be **accessed through class itself or through class instances** 
+- When accessing an attribute through an instance, Python will __first check if an instance contains that attribute__. If it doesn't, it will check if its class (or a class it inherits from) contains it. [[1]](https://youtu.be/BJ-VvGyQxho?t=214)
 
 ### Class Constructor \_\_init__
 - Runs every time an instance is made
@@ -25,3 +25,7 @@ emp1 = Employees ('Guy', 'Montag', 1000)
 print(emp1.__dict__)
 >> {'first_name': 'Guy', 'last_name': 'Montag', 'pay': 1000}
 ```
+
+
+# Type hints
+- [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
