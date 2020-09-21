@@ -3,7 +3,7 @@
 ## Resources
 - [Corey Shafer's OOP tutorial on YT](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
 
-## Class Variables
+## Class Variables[[1]](https://www.youtube.com/watch?v=BJ-VvGyQxho)
 - Class attributes can be **accessed through class itself or through class instances** 
 - When accessing an attribute through an instance, Python will __first check if an instance contains that attribute__. If it doesn't, it will check if its class (or a class it inherits from) contains it. [[1]](https://youtu.be/BJ-VvGyQxho?t=214)
 
@@ -41,6 +41,9 @@ fullname(emp_1)
 def set_raise_amt(cls, amount):
   cls.raise_amt = amount
 ```
+- **staticsmethod** has a decorator **@staticmethod** at the top and **don't pass anything automatically**
+- This means they behave like a normal function - they are included in the class because they have a logical connection with it
+- If the method doesn't uses the class or its instance, it should probably be a static method
 
 # Type hints
 - [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
