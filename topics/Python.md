@@ -29,3 +29,7 @@ print(emp1.__dict__)
 
 # Type hints
 - [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
+```python
+def greeting(name: str) -> str:
+    return 'Hello ' + name
+```
