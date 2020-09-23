@@ -69,3 +69,13 @@ class Developer(Employee):
 def greeting(name: str) -> str:
     return 'Hello ' + name
 ```
+
+
+# Various
+- Loops through values in a list but skips all 1's
+```python
+values = [0,1,2,1,0]
+known = 1
+for i in (x for x in values if not x in known):
+    print i
+```
