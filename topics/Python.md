@@ -72,10 +72,9 @@ def greeting(name: str) -> str:
 
 
 # Various
-- Loops through values in a list but skips all 1's
+- Loops through values in a list but skips all 'f' letters
 ```python
-values = [0,1,2,1,0]
-known = 1
-for i in (x for x in values if not x in known):
-    print i
+string = 'flower'
+for i in (x for x in string if x != 'f'):
+    print(i)
 ```
