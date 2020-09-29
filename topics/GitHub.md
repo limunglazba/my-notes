@@ -12,19 +12,19 @@
   ```cmd
   git status
   ```
-  - Commit changes to the repository with a message (-m) "First commit". Important: this still is not uploaded to the repo.
-  ```cmd
-  git commit -m "First commit"
-  ```
-  - Upload commited changes to the repository
-  ```cmd
-  git push
-  ```
-  - Pull changes down from the remote repo to your local machine
-  ```cmd
-  git pull
-  ```
- - Pull a repository from a remote repository (GitHub) to your local machine using the provided url
-  ```cmd
-  git clone [url]
-  ```
+- Commit changes to the repository with a message (-m) "First commit". Important: this still is not uploaded to the repo.
+```cmd
+git commit -m "First commit"
+```
+- Upload commited changes to the repository
+```cmd
+git push
+```
+- Pull changes down from the remote repo to your local machine
+```cmd
+git pull
+```
+- Pull a repository from a remote repository (GitHub) to your local machine using the provided url
+```cmd
+git clone [url]
+```
