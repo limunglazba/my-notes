@@ -1,5 +1,6 @@
 ## Sources
 - [YT tutorial: GitHub for beginners](https://www.youtube.com/watch?v=0fKg7e37bQE&t=684s)
+- [Official GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github)
 
 # Git commands
 - When typing these commands in the terminal, the current folder in your terminal must correspond to the project you want to commit 
