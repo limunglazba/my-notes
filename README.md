@@ -11,3 +11,6 @@ software engineering notes
 
 ## **Atom**
 - [Installation](https://github.com/limunglazba/my-notes/blob/master/topics/Atom.md#installation)
+
+## **GitHub**
+- [Git commands](https://github.com/limunglazba/my-notes/blob/master/topics/GitHub.md#git-commands)
