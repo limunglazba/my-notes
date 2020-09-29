@@ -31,3 +31,7 @@ git pull
 ```cmd
 git clone [url]
 ```
+- Exit full blown commit: (ESC) :wp
+```cmd
+(ESC) :wp
+```
