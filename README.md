@@ -8,3 +8,6 @@ software engineering notes
 - [Object Oriented Programming](https://github.com/limunglazba/my-notes/blob/master/topics/Python.md#class-variables)
 - [Type Hints](https://github.com/limunglazba/my-notes/blob/master/topics/Python.md#type-hints)
 - [Various](https://github.com/limunglazba/my-notes/blob/master/topics/Python.md#various)
+
+## **Atom**
+- [Installation](https://github.com/limunglazba/my-notes/blob/master/topics/Atom.md#installation)
