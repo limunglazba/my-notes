@@ -1,3 +1,10 @@
+# Installation
+- Output installed packages in a new txt file and then install them in a new environment
+```cmd
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
+
 # Object Oriented Programming
 
 ## Resources
