@@ -1,5 +1,5 @@
 # Git commands
-- When typing these commands in the terminal, your current folder in the terminal must correspond to the project you want to commit 
+- When typing these commands in the terminal, the current folder in your terminal must correspond to the project you want to commit 
 - Initialize the local directory as a Git repository
   ```cmd
   git init
