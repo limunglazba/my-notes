@@ -16,6 +16,7 @@
   git status
   ```
 - Commit changes to the repository with a message (-m) "First commit". Important: this still is not uploaded to the repo.
+- If you commit changes without '-m', exit the screen with ESC + :wq
 ```cmd
 git commit -m "First commit"
 ```
@@ -30,8 +31,4 @@ git pull
 - Pull a repository from a remote repository (GitHub) to your local machine using the provided url
 ```cmd
 git clone [url]
-```
-- Exit full blown commit: (ESC) :wp
-```cmd
-(ESC) :wp
 ```
