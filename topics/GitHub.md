@@ -17,7 +17,7 @@
   ```cmd
   git status
   ```
-- Commit changes to the staging area with a message (-m) "First commit". Important: this still is not uploaded to the repo.
+- Commit changes to the local staging area with a message (-m) "First commit". Important: this still is not uploaded to the repo (needs **push**).
 - If you commit changes without '-m', exit the screen with ESC + :wq
 ```cmd
 git commit -m "First commit"
