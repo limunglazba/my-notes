@@ -1,5 +1,6 @@
 ## Sources
 - [YT tutorial: GitHub for beginners](https://www.youtube.com/watch?v=0fKg7e37bQE&t=684s)
+- [YT tutorial: Corey Shafer's Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4&t=131s)
 - [Official GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github)
 
 # Git commands
