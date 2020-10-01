@@ -8,8 +8,17 @@ Python
 | `pip freeze > requirements.txt` | Save installed Python packages in a new txt file |
 | `pip install -r requirements.txt` | Install these packages in a new environment |
 
-
-
+### Lists
+#### Slice notation
+| Command | Description |
+| ------- | ----------- |
+| `a[start:stop]` | access items on list *a* from start through stop-1 |
+| `a[start:]` | access items on list *a* from start until the end of the list|
+| `a[:stop]` | access items on list *a* from the beginning through stop-1 |
+| `a[:]` | access every item on list *a*|
+| `a[start:stop:step]` | start through not past stop, by step |
+| `a[-2:]` | last two items in the list |
+| `a[::-1]` | all items in the list, reversed|
 
 ### Object Oriented Programming
 
@@ -91,4 +100,10 @@ class Developer(Employee):
 string = 'flower'
 for i in (x for x in string if x != 'f'):
     print(i)
+```
+- Split string into a list of characters
+```python
+string = 'flower'
+res = [] 
+res[:] = string
 ```
