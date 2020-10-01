@@ -77,11 +77,14 @@ class Developer(Employee):
 
 
 ### Type hints
-- [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
-```python
+| Command | Returns | Source |
+| ```python
 def greeting(name: str) -> str:
     return 'Hello ' + name
-```
+``` | ----------- | [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE) |
+
+- 
+
 
 
 ### Various
