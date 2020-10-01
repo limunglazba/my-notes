@@ -9,20 +9,20 @@ Python
 | `pip install -r requirements.txt` | Install these packages in a new environment |
 
 
-# Object Oriented Programming
+### Object Oriented Programming
 
-## Resources
+#### Resources
 - [Corey Shafer's OOP tutorial on YT](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
 
 
-## Class Variables[[1]](https://www.youtube.com/watch?v=BJ-VvGyQxho)
+#### Class Variables[[1]](https://www.youtube.com/watch?v=BJ-VvGyQxho)
 - Class attributes can be **accessed through class itself or through class instances** 
 - When accessing an attribute through an instance, Python will __first check if an instance contains that attribute__. If it doesn't, it will check if its class (or a class it inherits from) contains it. [[1]](https://youtu.be/BJ-VvGyQxho?t=214)
 
-### Class Constructor \_\_init__
+##### Class Constructor \_\_init__
 - Runs every time an instance is made
 
-### Attribute Access via \_\_dict__
+##### Attribute Access via \_\_dict__
 - \_\_dict__ is a special attribute of every object, containing all the attributes defined for the object itself. 
 - It maps the attribute name to its value.
 
@@ -40,7 +40,7 @@ print(emp_1.__dict__)
 ```
 
 
-## classmethods and staticmethods[[1]](https://www.youtube.com/watch?v=rq8cL2XMM5M)
+#### classmethods and staticmethods[[1]](https://www.youtube.com/watch?v=rq8cL2XMM5M)
 - **Regular methods** automatically take in the **instance as the first argument**
 ```python
 def fullname(self):
@@ -59,7 +59,7 @@ def set_raise_amt(cls, amount):
 - If the method doesn't uses the class or its instance, it should probably be a static method
 
 
-## Inheritance and subclasses
+#### Inheritance and subclasses
 - **Subclasses** inherits attributes and methods from the parent class, which we can then override or add new functionalities without affecting the parent class
 - **Method Resolution Order** defines the chain of inheritance in which order Python checks for attributes and methods (child \>\> parent \>\> generic object class)
 - Use **super()** for accessing methods of base classes:
@@ -74,7 +74,7 @@ class Developer(Employee):
 
 
 
-# Type hints
+### Type hints
 - [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE)
 ```python
 def greeting(name: str) -> str:
@@ -82,7 +82,7 @@ def greeting(name: str) -> str:
 ```
 
 
-# Various
+### Various
 - Loops through values in a list but skips all 'f' letters
 ```python
 string = 'flower'
