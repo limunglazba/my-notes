@@ -79,7 +79,8 @@ class Developer(Employee):
 ### Type hints
 | Command | Explanation | Source |
 | -------------- | ----------- | ------ |
-| `def greeting(name: str) -> str:`| argument name is expected to be of type str and the return type str | [Sebastiaan Mathôt on YT - Type hints](https://www.youtube.com/watch?v=rytP_vIjzeE) |
+| `def greeting(name: str) -> str:
+      return name`| argument name is expected to be of type str and the return type str | [Sebastiaan Mathôt on YT - Type hints](https://www.youtube.com/watch?v=rytP_vIjzeE) |
 
 - 
 
