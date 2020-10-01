@@ -77,11 +77,9 @@ class Developer(Employee):
 
 
 ### Type hints
-| Command | Returns | Source |
-| ```python
-def greeting(name: str) -> str:
-    return 'Hello ' + name
-``` | ----------- | [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE) |
+| Command | Explanation | Source |
+| ------- | ----------- |
+| `def greeting(name: str) -> str:`| argument name is expected to be of type str and the return type str | [Python tricks: Type hints and static type checking YT intro video](https://www.youtube.com/watch?v=rytP_vIjzeE) |
 
 - 
 
