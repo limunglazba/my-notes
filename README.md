@@ -10,6 +10,9 @@ software engineering notes
 - [Type Hints](https://github.com/limunglazba/my-notes/blob/master/topics/Python.md#type-hints)
 - [Various](https://github.com/limunglazba/my-notes/blob/master/topics/Python.md#various)
 
+## **Python custom packages**
+- [Scrapy](https://github.com/limunglazba/my-notes/blob/master/topics/Python-packages.md#scrapy)
+
 ## **Atom**
 - [Installation](https://github.com/limunglazba/my-notes/blob/master/topics/Atom.md#installation)
 
