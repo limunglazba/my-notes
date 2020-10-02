@@ -6,11 +6,11 @@ Python Packages
 ### Scrapy
 
 #### Terminal commands
-| Command | Description |
-| ------- | ----------- |
-| `scrapy startproject [project name]` | Create new Scrapy project |
-| `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging |
-
+| Command | Description | Type |
+| ------- | ----------- | ----------- |
+| `scrapy startproject [project name] [project dir] ` | Create a new Scrapy project. [Project dir] is optional | Global command |
+| `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging | Global command |
+| `scrapy crawl [spider name]` | Run your [spider] | Project-only command |
 
 #### Settings.py
 | Command | Description |
@@ -33,10 +33,12 @@ Python Packages
 - Put your spiders in this folder
 
 #### Selectors & scraping
-- 
+- css and xpath selectors can be used in combination in scrapy
 | Command | Description |
 | ------- | ----------- |
 | `response.css('tag.class').get()` | Selects class named 'class' from html <tag> |
-| `response.css('tag.class::text').get()` | Selects text from the class |
+| `response.css('tag.class::text').get()` | Selects text within the 'class' |
+| `response.css('*::text').get()` | Selects all descendant text from the current selector |
+| `response.css('tag.class::attr(href)').get()` | Selects attribute (href) from the class |
 | `.get()` | Returns the first result. For no mathces, *None* is returned |
 | `.getall()` | Returns a list with all results |
