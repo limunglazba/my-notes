@@ -11,13 +11,13 @@ Python Packages
 | `scrapy startproject [project name]` | Create new Scrapy project |
 
 #### Settings.py
-| Line | Description |
+| Command | Description |
 | ------- | ----------- |
 | `USER_AGENT` | Identity of the person sending requests |
 | `ROBOTSTXT_OBEY` | True = obeys website's scraping rules as set in their robots.txt |
 
 #### Items.py
-| Item | Description |
+| Command | Description |
 | ------- | ----------- |
 | `Class Item` | Class should contain fields for the item we're scraping |
 
@@ -29,3 +29,9 @@ Python Packages
 
 #### Spiders folder
 - Put your spiders in this folder
+
+#### Selectors & scraping
+| Command | Description |
+| ------- | ----------- |
+| `tag.class` | Selects class named 'class' from html <tag> |
+| `ROBOTSTXT_OBEY` | True = obeys website's scraping rules as set in their robots.txt |
