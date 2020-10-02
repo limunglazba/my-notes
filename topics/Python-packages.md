@@ -34,6 +34,7 @@ Python Packages
 
 #### Selectors & scraping
 - css and xpath selectors can be used in combination in Scrapy
+
 | Command | Description |
 | ------- | ----------- |
 | `response.css('tag.class').get()` | Selects class named *class* from html *tag* |
