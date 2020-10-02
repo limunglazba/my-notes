@@ -9,6 +9,8 @@ Python Packages
 | Command | Description |
 | ------- | ----------- |
 | `scrapy startproject [project name]` | Create new Scrapy project |
+| `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging |
+
 
 #### Settings.py
 | Command | Description |
@@ -31,7 +33,10 @@ Python Packages
 - Put your spiders in this folder
 
 #### Selectors & scraping
+- 
 | Command | Description |
 | ------- | ----------- |
-| `tag.class` | Selects class named 'class' from html <tag> |
-| `ROBOTSTXT_OBEY` | True = obeys website's scraping rules as set in their robots.txt |
+| `response.css('tag.class').get()` | Selects class named 'class' from html <tag> |
+| `response.css('tag.class::text').get()` | Selects text from the class |
+| `.get()` | Returns the first result. For no mathces, *None* is returned |
+| `.getall()` | Returns a list with all results |
