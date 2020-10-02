@@ -26,3 +26,6 @@ Python Packages
 
 #### Middlewares.py
 - For adding extra stuff to the request (e.g. proxies) or for manipulating the received data before sending it to pipeline.py
+
+#### Spiders folder
+- Put your spiders in this folder
