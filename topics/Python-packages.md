@@ -39,6 +39,7 @@ Python Packages
 | ------- | ----------- |
 | `response.css('tag.class').get()` | Selects class named *class* from html *tag* |
 | `response.css('tag.class::text').get()` | Selects text within the 'class' |
+| `response.css('tag.class::text').re(r'<regex>')` | Selects all <regex> expressions from the text within the 'class'. *re_first()* selects first regex expression. |
 | `response.css('*::text').get()` | Selects all descendant text from the current selector |
 | `response.css('tag.class::attr(href)').get()` | Selects attribute (href) from the class |
 | `.get()` | Returns the first result. For no mathces, *None* is returned |
