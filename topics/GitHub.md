@@ -43,7 +43,7 @@ Git Commands
 | `git branch --merged` | Shows a list of all branches merged into the active branch. Useful when merging with the master branch. |
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
-| `git merge [source branch] [target branch] --allow-unrelated-histories` | Merge a branch into a target branch when github thinks two brances are unrelated (refusing to merge unrelated histories error) |
+| `git merge [source branch] [target branch] --allow-unrelated-histories` | Merge a branch into a target branch when github thinks two branches are unrelated (refusing to merge unrelated histories error) |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
 
