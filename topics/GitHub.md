@@ -30,6 +30,7 @@ Git Commands
 | ------- | ----------- |
 | `git branch` | List branches (the asterisk denotes the current branch) |
 | `git branch -a` | List all branches (local and remote). Branch with * is the branch you're currently working on.  |
+| `git remote -v` | Check what remote branches have been set.  |
 | `git branch [branch name]` | Create a new branch |
 | `git branch -d [branch name]` | Delete a branch (locally) |
 | `git push origin --delete [branch name]` | Delete a remote branch |
@@ -49,13 +50,13 @@ Git Commands
 
 | Command | Description |
 | ------- | ----------- |
+| `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote origin repository (remote repository has to be created on your github account first). |
 | `git push origin [branch name]` | Push a [branch] to your remote repository |
 | `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
 | `git push` | Push changes to remote repository (remembered branch) |
 | `git push origin --delete [branch name]` | Delete a remote branch |
 | `git pull` | Update local repository to the newest commit |
 | `git pull origin [branch name]` | Pull changes from remote repository |
-| `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
 ### Inspection & Comparison
