@@ -11,6 +11,7 @@ Git Commands
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+| `touch .gitignore` | Add .gitignore file to your local Git repository (open in text editor and add a list of files which you don't want uploaded to the remote repository |
 
 ### Basic Snapshotting
 
@@ -20,7 +21,8 @@ Git Commands
 | `git add [file-name.txt]` | Add a file to the local staging area |
 | `git add -A` | Add all new and changed files to the local staging area. You can also use . instead of -A |
 | `git commit -m "[commit message]"` | Commit changes with a message (-m). If you commit changes without '-m', exit the screen with ESC + :wq |
-| `git rm -r [file-name.txt]` | Remove a file (or folder). You can also use git remove instead. |
+| `git rm -r [file-name.txt]` | Remove a file (or folder) from local staging area. You can also use git remove instead. |
+| `git reset` | Removes all files from local staging area. |
 
 ### Branching & Merging
 
@@ -64,6 +66,15 @@ Git Commands
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
+### Initial Install
+
+| Command | Description |
+| ------- | ----------- |
+| `git --version` | Checks the version of the installed locally git |
+| `git config --global user.name [name]` | Sets up the name of the user  |
+| `git config --global user.email [mail]` | Sets up the mail of the user  |
+| `git config --list` | List all git configurations |
 
 
 ### Sources
