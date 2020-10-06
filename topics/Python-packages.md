@@ -9,8 +9,8 @@ Python Packages
 | Command | Description | Type |
 | ------- | ----------- | ----------- |
 | `scrapy startproject <project name> [project dir] ` | Create a new Scrapy project | Global command |
-| `scrapy shell <url>` | Scrape <url> within interactive terminal for interactive testing and debugging | Global command |
-| `scrapy crawl <spider name>` | Run your <spider> | Project-only command |
+| `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging | Global command |
+| `scrapy crawl [spider name]` | Run your [spider] | Project-only command |
 
 #### Settings.py
 | Command | Description |
