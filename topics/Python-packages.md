@@ -48,4 +48,4 @@ Python Packages
   
  ### Discord
 
-- (Setting up automated messages with Discord's webhooks)[https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks]
+- [Setting up automated messages with Discord's webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
