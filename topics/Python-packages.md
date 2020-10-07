@@ -46,4 +46,6 @@ Python Packages
 | `.getall()` | Returns a list with all results |
 
   
+ ### Discord
 
+- (Setting up automated messages with Discord's webhooks)[https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks]
