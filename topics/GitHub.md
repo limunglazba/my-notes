@@ -5,8 +5,17 @@ Git Commands
 ### Note
 - When typing these commands in the terminal, the current folder in your terminal must correspond to the project you want to commit 
 
-### Steps for Pushing Changes
-1. `git pull [remote] [your active local branch]`   
+### Working in a New Branch - Pushing Changes & Merging with Master Branch
+1. `git checkout [new local branch]`  
+2. `git add [file]`  
+3. `git commit -m [version description]`  
+4. `git push -u [remote branch - origin] [new local branch]`  first push requires *-u* to setup the connection between the remote and local branch.
+5. `git checkout [master branch]`  
+6. `git merge [new local branch]`  
+7. `git branch --merged` If the master and new branch were successfully merged, the list of merged branches should contain your new branch.  
+8. `git branch -d [new local branch]`  
+9. `git push origin --delete [new local branch]`  
+10. `git branch -a` Check whether the new branch has been deleted localy and remotely  
 
 ### Getting & Creating Projects
 
