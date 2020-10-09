@@ -20,6 +20,14 @@ Python
 | `a[-2:]` | last two items in the list |
 | `a[::-1]` | all items in the list, reversed|
 
+
+### Various
+
+| Command | Description |
+| ------- | ----------- |
+| `{:.n%}".format(number)` | Format number as percentage. *n* is the number of decimal places|
+
+
 ### Object Oriented Programming
 
 #### Resources
