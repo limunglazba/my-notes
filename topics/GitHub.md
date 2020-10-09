@@ -5,6 +5,9 @@ Git Commands
 ### Note
 - When typing these commands in the terminal, the current folder in your terminal must correspond to the project you want to commit 
 
+### Steps for Pushing Changes
+1. `git pull [remote] [your active local branch]`   
+
 ### Getting & Creating Projects
 
 | Command | Description |
