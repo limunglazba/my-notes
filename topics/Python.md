@@ -21,7 +21,7 @@ Python
 | `a[::-1]` | all items in the list, reversed|
 
 #### List comprehensions (list comps)
-- Used to create Cartesian product from iterables. E.g., produce a list of T-shirts available in 2 colors and 3 sizes:
+- Can be used to create Cartesian product from iterables: e.g. produce a list of T-shirts available in 2 colors and 3 sizes:
 ```
 colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
