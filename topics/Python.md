@@ -38,6 +38,7 @@ tshirts = [(color, size) for color in colors for size in sizes]
 ```
 a = i for i in range (1000)
 list(a)[0]
+>>> 0
 ```
 
 ### Various
