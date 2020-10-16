@@ -46,31 +46,7 @@ list(a)[0]
 
 | List | Generator |
 | ------- | ----------- |
-| def squares(nums): <br>&nbsp;&nbsp;result = [] <br>&nbsp;&nbsp;for i in nums: <br>&nbsp;&nbsp;&nbsp;&nbsp;result.append(i`*`i) <br>&nbsp;&nbsp;return result<br><br>my_nums = squares(`[1,2,3,4,5]`) <br>print(my_nums)| def squares(nums): <br>&nbsp;&nbsp;for i in nums: <br>&nbsp;&nbsp;&nbsp;&nbsp;yield (i`*`i) <br><br>my_nums = squares(`[1,2,3,4,5]`) <br>for num in my_nums: <br>print(num) |
-
-
-- List-based function that returns square numbers:
-```
-def squares(nums):
-    result = []
-    for i in nums:
-        result.append(i*i)
-    return result
-
-my_nums = squares((1,2,3,4,5))
-print(my_nums)
-``` 
-- Generator-based function that returns square numbers:
-```
-def squares(nums):
-    for i in nums:
-        yield (i*i)
-
-my_nums = squares([1,2,3,4,5])
-for num in my_nums:
-    print (num)
-``` 
-
+| def squares(nums): <br>&nbsp;&nbsp;result = [] <br>&nbsp;&nbsp;for i in nums: <br>&nbsp;&nbsp;&nbsp;&nbsp;result.append(i`*`i) <br>&nbsp;&nbsp;return result<br><br>my_nums = squares(`[1,2,3,4,5]`) <br>print(my_nums)| def squares(nums): <br>&nbsp;&nbsp;for i in nums: <br>&nbsp;&nbsp;&nbsp;&nbsp;yield (i`*`i) <br><br>my_nums = squares(`[1,2,3,4,5]`) <br>for num in my_nums: <br>&nbsp;&nbsp;print(num) |
 
 ### Tuples
 **Tuple is an immutable and hashable list.**
