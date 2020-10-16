@@ -63,7 +63,7 @@ list(a)[0]
 | Command | Description |
 | ----------------- | ----------- |
 | `from collections import namedtuple` | Importing named tuple from collections package |
-| `City = namedtuple('City', 'name country population coordinates')` | Creating a named tuple class *City* |
+| `City = namedtuple('City', 'name country population coordinates')` | Creating a named tuple class *City* with 4 variables|
 
 ### Various
 
