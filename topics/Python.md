@@ -51,7 +51,7 @@ list(a)[0]
 ### Tuples
 **Tuple is an immutable and hashable list.**
 
-| Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | ----------------- | ----------- |
 | `lax_coordinates = (33.9425, -118.408056)` <br> `latitude, longitude = lax_coordinates` | Tuple unpacking |
 | `a, b = b, a` | Swapping variables with tuple unpacking without using a temporary variable |
