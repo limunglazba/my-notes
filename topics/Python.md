@@ -8,6 +8,12 @@ Python
 | `pip freeze > requirements.txt` | Save installed Python packages in a new txt file |
 | `pip install -r requirements.txt` | Install these packages in a new environment |
 
+### System
+- Requires `import sys`
+| Command | Description |
+| ------- | ----------- |
+| `sys.getsizeof(a)` | Returns size of object *a* |
+
 ### Lists
 #### Slice notation
 | Command | Description |
@@ -20,13 +26,15 @@ Python
 | `a[-2:]` | last two items in the list |
 | `a[::-1]` | all items in the list, reversed|
 
-#### List comprehensions (list comps)
+#### List comprehensions (listcomps)
 - Can be used to create Cartesian product from iterables: e.g. produce a list of T-shirts available in 2 colors and 3 sizes:
 ```
 colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
 ```
+-**Generator Expression** is faster than listcomps and is used to initialize tuples, arrays and other sequence types. It has the same syntax as listcomps, but uses parentheses () rather than brackets [].
+
 
 ### Various
 
