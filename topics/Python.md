@@ -21,9 +21,10 @@ Python
 | `a[::-1]` | all items in the list, reversed|
 
 #### List comprehensions (list comps)
-`colors = ['black', 'white']
+- Create Cartesian product from two iterables (colors, sizes):
+```colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
-tshirts = [(color, size) for color in colors for size in sizes]`
+tshirts = [(color, size) for color in colors for size in sizes]```
 
 ### Various
 
