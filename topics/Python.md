@@ -57,6 +57,14 @@ list(a)[0]
 | `a, b = b, a` | Swapping variables with tuple unpacking without using a temporary variable |
 | `print(*t)` | Prefixing an argument with * (asterisk) will also unpack the tuple or list *t* - see also *Grabbing excess items* under *Various* |
 
+### Named Tuples
+**Produces subclasses of tuple enhanced with field names and a class name — helps debugging.**
+
+| Command | Description |
+| ----------------- | ----------- |
+| `from collections import namedtuple` | Importing named tuple from collections package |
+| `City = namedtuple('City', 'name country population coordinates')` | Creating a named tuple class *City* |
+
 ### Various
 
 | Command | Description |
