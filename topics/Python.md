@@ -50,13 +50,10 @@ list(a)[0]
 
 ### Tuples
 **Tuple is an immutable and hashable list.**
-#### Tuple Unpacking
-```
->>> lax_coordinates = (33.9425, -118.408056)
->>> latitude, longitude = lax_coordinates # tuple unpacking
-```
+
 | Command | Description |
 | ------- | ----------- |
+| `lax_coordinates = (33.9425, -118.408056) <br> latitude, longitude = lax_coordinates # tuple unpacking` | Tuple unpacking |
 | `a, b = b, a` | Swapping variables with tuple unpacking without using a temporary variable |
 | `print(*t)` | Prefixing an argument with * will also unpack the tuple *t* |
 
