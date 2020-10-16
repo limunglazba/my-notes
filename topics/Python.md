@@ -43,6 +43,7 @@ list(a)[0]
 
 ### List vs Generator
 - Function that returns square numbers based on a list or a generator:
+
 | List | Generator |
 | ------- | ----------- |
 | def squares(nums)| xx |
