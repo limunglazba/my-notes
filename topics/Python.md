@@ -42,10 +42,8 @@ list(a)[0]
 ```
 
 ### List vs Generator
-#### Slice notation
-| List | Generator |
-| ------- | ----------- |
-| ```
+- List-based function that returns square numbers:
+```
 def squares(nums):
     result = []
     for i in nums:
@@ -55,7 +53,17 @@ def squares(nums):
 my_nums = squares((1,2,3,4,5))
 print(my_nums)
 ``` 
-| access items on list *a* from start through stop-1 |
+- Generator-based function that returns square numbers:
+```
+def squares(nums):
+    for i in nums:
+        yield (i*i)
+
+my_nums = squares([1,2,3,4,5])
+for num in my_nums:
+    print (num)
+``` 
+
 
 ### Tuples
 **Tuple is an immutable and hashable list.**
