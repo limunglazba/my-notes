@@ -46,7 +46,7 @@ list(a)[0]
 
 | List | Generator |
 | ------- | ----------- |
-| def squares(nums):<br>&nbsp;&nbsp;&nbsp;result = []<br>    for i in nums: <br>       result.append(i`*`i) <br>    return result<br>    my_nums = squares((1,2,3,4,5)) <br>    print(my_nums)| xx |
+| def squares(nums): <br>&nbsp;&nbsp;result = [] <br>&nbsp;&nbsp;for i in nums: <br>&nbsp;&nbsp;&nbsp;&nbsp;result.append(i`*`i) <br>&nbsp;&nbsp;return result<br><br>my_nums = squares((1,2,3,4,5)) <br>print(my_nums)| xx |
 
 
 - List-based function that returns square numbers:
