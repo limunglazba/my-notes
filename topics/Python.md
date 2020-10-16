@@ -22,7 +22,8 @@ Python
 
 #### List comprehensions (list comps)
 - Create Cartesian product from two iterables (colors, sizes):
-```colors = ['black', 'white']
+```
+colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
 ```
