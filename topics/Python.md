@@ -55,14 +55,14 @@ list(a)[0]
 | ------- | ----------- |
 | `lax_coordinates = (33.9425, -118.408056)` <br> `latitude, longitude = lax_coordinates` | Tuple unpacking |
 | `a, b = b, a` | Swapping variables with tuple unpacking without using a temporary variable |
-| `print(*t)` | Prefixing an argument with * will also unpack the tuple *t* |
+| `print(*t)` | Prefixing an argument with * (asterisk) will also unpack the tuple or list *t* - see also *Grabbing excess items* under *Various* |
 
 ### Various
 
 | Command | Description |
 | ------- | ----------- |
 | `{:.n%}".format(number)` | Format number as percentage. *n* is the number of decimal places|
-
+| `a, b, *rest = range(5)` | Variable *rest* will grab all remaining items (2-4)|
 
 - Loops through values in a list but skips all 'f' letters
 ```python
