@@ -52,7 +52,7 @@ list(a)[0]
 **Tuple is an immutable and hashable list.**
 
 | Command | Description |
-| ------- | ----------- |
+| ----------------- | ----------- |
 | `lax_coordinates = (33.9425, -118.408056)` <br> `latitude, longitude = lax_coordinates` | Tuple unpacking |
 | `a, b = b, a` | Swapping variables with tuple unpacking without using a temporary variable |
 | `print(*t)` | Prefixing an argument with * (asterisk) will also unpack the tuple or list *t* - see also *Grabbing excess items* under *Various* |
