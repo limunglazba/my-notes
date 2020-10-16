@@ -45,7 +45,8 @@ list(a)[0]
 #### Slice notation
 | List | Generator |
 | ------- | ----------- |
-| ```def squares(nums):
+| ```
+def squares(nums):
     result = []
     for i in nums:
         result.append(i*i)
