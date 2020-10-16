@@ -31,7 +31,7 @@ colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
 ```
-#### Generator Expression (genexp) [Corey Schafer: Generators on YT](https://www.youtube.com/watch?v=bD05uGo_sVI)
+#### Generator Expression (genexp) [1](https://www.youtube.com/watch?v=bD05uGo_sVI)
 - Generator Expression uses less memory than listcomps because it doesn't return all data at once like a list does. It has the same syntax as listcomps, but uses parentheses () rather than brackets [].
 - Best used when list is an intermediary, such as summing the results. Use listcomps when you need the list as the final product.
 - In order to make any adjustments to the genexp or fetch data from it, you need to convert it to a list first:
@@ -40,6 +40,22 @@ a = i for i in range (1000)
 list(a)[0]
 >>> 0
 ```
+
+### List vs Generator
+#### Slice notation
+| List | Generator |
+| ------- | ----------- |
+| ```def squares(nums):
+    result = []
+    for i in nums:
+        result.append(i*i)
+    return result
+
+my_nums = squares((1,2,3,4,5))
+print(my_nums)
+``` 
+| access items on list *a* from start through stop-1 |
+
 ### Tuples
 **Tuple is an immutable and hashable list.**
 #### Tuple Unpacking
