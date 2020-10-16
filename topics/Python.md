@@ -3,7 +3,7 @@ Python
 
 | Command | Description |
 | ------- | ----------- |
-| `pip freeze > <br>requirements.txt` | Save installed Python packages in a new txt file |
+| pip freeze > <br>requirements.txt | Save installed Python packages in a new txt file |
 
 
 ### Installation
