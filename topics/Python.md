@@ -31,8 +31,8 @@ colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
 ```
-#### Generator Expression (genexp)
-- Generator Expression uses less memory than listcomps because it doesn't build the whole list at once. It has the same syntax as listcomps, but uses parentheses () rather than brackets [].
+#### Generator Expression (genexp) (Corey Schafer: Generators on YT)[https://www.youtube.com/watch?v=bD05uGo_sVI]
+- Generator Expression uses less memory than listcomps because it doesn't return all data at once like a list does. It has the same syntax as listcomps, but uses parentheses () rather than brackets [].
 - Best used when list is an intermediary, such as summing the results. Use listcomps when you need the list as the final product.
 - In order to make any adjustments to the genexp or fetch data from it, you need to convert it to a list first:
 ```
