@@ -12,6 +12,10 @@ Python Packages
 | `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging | Global command |
 | `scrapy crawl [spider name]` | Run your [spider] | Project-only command |
 
+#### Creating a Project - Steps
+**1. Start a new project in the terminal**
+`scrapy startproject <project name> [project dir] `
+
 #### Settings.py
 | Command | Description |
 | ------- | ----------- |
