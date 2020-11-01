@@ -3,7 +3,7 @@ Python Packages
 ============
 
 
-### Scrapy
+### Scrapy [1](https://www.youtube.com/playlist?list=PLhTjy8cBISEqkN-5Ku_kXG4QW33sxQo0t)
 
 #### Terminal commands
 | Command | Description | Type |
@@ -34,13 +34,13 @@ class TestSpider(scrapy.Spider):
         yield {'titletext': title}
 
 ```
-**3. Create item containers to store scrapped data in *items.py* and import it to your spider**:
+**3. For storing scrapped data: in *items.py*, create item containers corresponding to the parsed fields from your spider (*title* in this example)**:
 
 ```cmd
 class TestItem(scrapy.Item):
     title = scrapy.Field()
 ```
-
+**4. For storing scrapped data: Import item class from *items.py* to your spider**:
 
 ```cmd
 from ..items import TestItem
@@ -55,6 +55,20 @@ class TestSpider(scrapy.Spider):
         items['title'] = title
         yield items
 ```
+**5. For storing scrapped data: Enable ITEM_PIPELINES in *settings.py* **:
+
+**6. For storing scrapped data: In *pipeline.py*, setup your database **:
+
+**7. For multiple pages: In your spider file, add instructions in the *parse* method **:
+
+```cmd
+    next_page = response.css(<CSS_SELECTOR>::attr(href)).get()
+
+    if next_page is not None:
+        yield response.follow(next_page, callback=self.parse)
+```
+**8. For pagination: In your spider file, add instructions in the *parse* method **:
+
 
 **X. OPTIONAL: Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**[1](https://pypi.org/project/scrapy-user-agents/)
   ```cmd
