@@ -41,13 +41,21 @@ class TestItem(scrapy.Item):
     title = scrapy.Field()
 ```
 **4. For storing scrapped data: Import item class from *items.py* to your spider**:
+```cmd
+from ..items import TestItem
+
+class TestSpider(scrapy.Spider):
+    name = 'test'
+    start_urls = [<url_for_scraping>]
+    
+    def parse(self, response):
+        items = RepsItem()
+        title = response.css('title::text').extract()
+        items['title'] = title
+        yield items
+```
 
 
-**5. For storing scrapped data: Enable ITEM_PIPELINES in *settings.py* **
-
-**6. For storing scrapped data: In *pipeline.py*, setup your database **
-
-**7. For multiple pages: In your spider file, add instructions in the *parse* method **
 
 **8. For pagination: In your spider file, add instructions in the *parse* method **:
 
