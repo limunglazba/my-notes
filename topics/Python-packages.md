@@ -82,6 +82,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
   ```
+  **10. OPTIONAL: Authenticate with Scrapy's forms >> TBD '**
 
 #### Settings.py
 | Command | Description |
