@@ -57,31 +57,6 @@ class TestSpider(scrapy.Spider):
 
 
 
-**8. For pagination: In your spider file, add instructions in the *parse* method **:
-
-```cmd
-    next_page = response.css(<CSS_SELECTOR>::attr(href)).get()
-
-    if next_page is not None:
-        yield response.follow(next_page, callback=self.parse)
-```
-
-**9. OPTIONAL: Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**[1](https://pypi.org/project/scrapy-user-agents/)
-  ```cmd
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-}
-  ```
-- Alternatively, setup your own *USER_AGENT* variable in settings.py, like: [Google Bots](https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/)
-**10. OPTIONAL: Setup Proxies using scrapy-proxy-pool package in settings.py (requires pip install)**[1](https://github.com/rejoiceinhope/scrapy-proxy-pool)
-  ```cmd
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-}
-  ```
-
 
 #### Settings.py
 | Command | Description |
