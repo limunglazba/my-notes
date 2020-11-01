@@ -41,19 +41,7 @@ class TestItem(scrapy.Item):
     title = scrapy.Field()
 ```
 **4. For storing scrapped data: Import item class from *items.py* to your spider**:
-```cmd
-from ..items import TestItem
 
-class TestSpider(scrapy.Spider):
-    name = 'test'
-    start_urls = [<url_for_scraping>]
-    
-    def parse(self, response):
-        items = RepsItem()
-        title = response.css('title::text').extract()
-        items['title'] = title
-        yield items
-```
 
 **5. For storing scrapped data: Enable ITEM_PIPELINES in *settings.py* **
 
@@ -63,6 +51,12 @@ class TestSpider(scrapy.Spider):
 
 **8. For pagination: In your spider file, add instructions in the *parse* method **:
 
+```cmd
+    next_page = response.css(<CSS_SELECTOR>::attr(href)).get()
+
+    if next_page is not None:
+        yield response.follow(next_page, callback=self.parse)
+```
 
 **9. OPTIONAL: Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**[1](https://pypi.org/project/scrapy-user-agents/)
   ```cmd
