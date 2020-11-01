@@ -20,7 +20,7 @@ Python Packages
 **2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with**:
 - *name* variable: name of your spider 
 - *start_urls* variable: list of urls to scrape
-- *parse* method: defines what Scrapy does with the response it receives (Scrapy uses *yield* keyword instead of *return*) - see *Selectors & scraping*
+- *parse* method: defines what Scrapy does with the response (Scrapy uses *yield* keyword instead of *return*) - see *Selectors & scraping*
 
 ```cmd
 import scrapy
@@ -34,7 +34,29 @@ class TestSpider(scrapy.Spider):
         yield {'titletext': title}
 
 ```
-**X. Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**[1](https://pypi.org/project/scrapy-user-agents/)
+**3. Create item containers to store scrapped data in *items.py* and import it to your spider**:
+
+```cmd
+class TestItem(scrapy.Item):
+    title = scrapy.Field()
+```
+
+
+```cmd
+from ..items import TestItem
+
+class TestSpider(scrapy.Spider):
+    name = 'test'
+    start_urls = [<url_for_scraping>]
+    
+    def parse(self, response):
+        items = RepsItem()
+        title = response.css('title::text').extract()
+        items['title'] = title
+        yield items
+```
+
+**X. OPTIONAL: Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**[1](https://pypi.org/project/scrapy-user-agents/)
   ```cmd
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
@@ -42,7 +64,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
   ```
 - Alternatively, setup your own *USER_AGENT* variable in settings.py, like: [Google Bots](https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/)
-**XX. Setup Proxies using scrapy-proxy-pool package in settings.py (requires pip install)**[1](https://github.com/rejoiceinhope/scrapy-proxy-pool)
+**XX. OPTIONAL: Setup Proxies using scrapy-proxy-pool package in settings.py (requires pip install)**[1](https://github.com/rejoiceinhope/scrapy-proxy-pool)
   ```cmd
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
