@@ -14,8 +14,17 @@ Python Packages
 
 #### Creating a Project - Steps
 **1. Start a new project in the terminal**
+  ```cmd
+  scrapy startproject <project name> [project dir]
+  ```
+**2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with spider *name* and scraping url list (*start_url*) variables**
 ```cmd
-scrapy startproject <project name> [project dir]
+import scrapy
+
+class TestSpider(scrapy.Spider):
+    name = 'test'
+    start_url = ['urls for scraping']
+
 ```
 
 #### Settings.py
