@@ -20,7 +20,7 @@ Python Packages
 **2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with**:
 - *name* variable: name of your spider 
 - *start_urls* variable: list of urls to scrape
-- *parse* method: defines what Scrapy does with the response it receives (Scrapy uses *yield* keyword instead of *return*)
+- *parse* method: defines what Scrapy does with the response it receives (Scrapy uses *yield* keyword instead of *return*) - see *Selectors & scraping*
 
 ```cmd
 import scrapy
