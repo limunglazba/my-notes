@@ -14,9 +14,9 @@ Python Packages
 
 #### Creating a Project - Steps
 **1. Start a new project in the terminal**
-    ```cmd
-    scrapy startproject <project name> [project dir]
-    ```
+```cmd
+scrapy startproject <project name> [project dir]
+```
 
 #### Settings.py
 | Command | Description |
