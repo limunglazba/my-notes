@@ -17,13 +17,13 @@ Python Packages
   ```cmd
   scrapy startproject <project name> [project dir]
   ```
-**2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with spider *name* and scraping url list (*start_url*) variables**
+**2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with spider *name* and *start_url* variables**
 ```cmd
 import scrapy
 
 class TestSpider(scrapy.Spider):
     name = 'test'
-    start_url = ['urls for scraping']
+    start_url = [<url_for_scraping>]
 
 ```
 
