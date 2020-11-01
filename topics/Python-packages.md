@@ -54,6 +54,20 @@ class TestSpider(scrapy.Spider):
         items['title'] = title
         yield items
 ```
+**5. For storing scrapped data: Enable ITEM_PIPELINES in *settings.py* **
+
+**6. For storing scrapped data: In *pipeline.py*, setup your database **
+
+**7. For multiple pages: In your spider file, add instructions in the *parse* method **
+
+```cmd
+    next_page = response.css(<CSS_SELECTOR>::attr(href)).get()
+
+    if next_page is not None:
+        yield response.follow(next_page, callback=self.parse)
+```
+**8. For pagination: In your spider file, add instructions in the *parse* method **:
+
 
 
 
