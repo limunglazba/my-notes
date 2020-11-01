@@ -12,18 +12,26 @@ Python Packages
 | `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging | Global command |
 | `scrapy crawl [spider name]` | Run your [spider] | Project-only command |
 
-#### Creating a Project - Steps
+#### Creating a Project: Main Steps
 **1. Start a new project in the terminal**
   ```cmd
   scrapy startproject <project name> [project dir]
   ```
-**2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with spider *name* and *start_url* variables**
+**2. Create your spider in the *spider* subfolder with a new class inhereting from scrapy.Spider, with**:
+- *name* variable: name of your spider 
+- *start_urls* variable: list of urls to scrape
+- *parse* method: defines what Scrapy does with the response it receives (Scrapy uses *yield* keyword instead of *return*)
+
 ```cmd
 import scrapy
 
 class TestSpider(scrapy.Spider):
     name = 'test'
-    start_url = [<url_for_scraping>]
+    start_urls = [<url_for_scraping>]
+
+    def parse(self, response):
+        title = response.css('.test-css').extract()
+        yield {'titletext': title}
 
 ```
 
