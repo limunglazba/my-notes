@@ -41,8 +41,14 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
   ```
-- Alternatively, setup your own *USER_AGENT* variable in settings.p, like: [Google Bots](https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/)
-
+- Alternatively, setup your own *USER_AGENT* variable in settings.py, like: [Google Bots](https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/)
+**XX. Setup Proxies using scrapy-proxy-pool package in settings.py (requires pip install)**[1](https://github.com/rejoiceinhope/scrapy-proxy-pool)
+  ```cmd
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+}
+  ```
 #### Settings.py
 | Command | Description |
 | ------- | ----------- |
