@@ -34,14 +34,14 @@ class TestSpider(scrapy.Spider):
         yield {'titletext': title}
 
 ```
-**X. Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**(1)[https://pypi.org/project/scrapy-user-agents/]
+**X. Setup User Agents using scrapy-user-agents package in settings.py (requires pip install)**[1](https://pypi.org/project/scrapy-user-agents/)
   ```cmd
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
   ```
-- Alternatively, setup your own *USER_AGENT* variable in settings.py (Google Bots)[https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/]
+- Alternatively, setup your own *USER_AGENT* variable in settings.p, like: [Google Bots](https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/)
 
 #### Settings.py
 | Command | Description |
