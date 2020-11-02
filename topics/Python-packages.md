@@ -118,6 +118,12 @@ DOWNLOADER_MIDDLEWARES = {
 | `.get()` | Returns the first result. For no mathces, *None* is returned |
 | `.getall()` | Returns a list with all results |
 
+### Scraping Resources
+| Command | Description |
+| ------- | ----------- |
+| [Requestbin](https://requestbin.com/) | Collect HTTP or webhook requests (code testing) |
+
+
   
  ### Discord
 
