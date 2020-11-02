@@ -8,6 +8,7 @@ Python Packages
 | Command | Description | Type |
 | ------- | ----------- | ----------- |
 | `scrapy startproject <project name> [project dir] ` | Create a new Scrapy project | Global command |
+| `scrapy genspider <spider name> <domain> ` | Create a template spider used to crawl <domain>  | Global command |
 | `scrapy shell [url]` | Scrape [url] within interactive terminal for interactive testing and debugging | Global command |
 | `scrapy crawl [spider name]` | Run your [spider] | Project-only command |
 
@@ -20,6 +21,7 @@ Python Packages
 - *name* variable: name of your spider 
 - *start_urls* variable: list of urls to scrape
 - *parse* method: defines what Scrapy does with the response (Scrapy uses *yield* keyword instead of *return*) - see *Selectors & scraping*
+- *allowed_domains* variable (optional): list of domains allowed to get scraped
 
 ```cmd
 import scrapy
