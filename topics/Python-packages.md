@@ -119,10 +119,12 @@ DOWNLOADER_MIDDLEWARES = {
 | `.getall()` | Returns a list with all results |
 
 #### Various
-- Inspect response within your spider (in the parse method) [1](https://docs.scrapy.org/en/latest/topics/shell.html#invoking-the-shell-from-spiders-to-inspect-responses)
+- Inspect response within your spider. Return to crawling with CTRL+Z for Windows [1](https://docs.scrapy.org/en/latest/topics/shell.html#invoking-the-shell-from-spiders-to-inspect-responses)
   ```cmd
   from scrapy.shell import inspect_response
-  inspect_response(response, self)
+  
+  def parse(self, response):
+       inspect_response(response, self)
   ```
   
 ### Scraping Resources
