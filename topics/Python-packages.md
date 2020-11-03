@@ -118,11 +118,17 @@ DOWNLOADER_MIDDLEWARES = {
 | `.get()` | Returns the first result. For no mathces, *None* is returned |
 | `.getall()` | Returns a list with all results |
 
+#### Various
+- Inspect response within your spider (in the parse method) (1)[https://docs.scrapy.org/en/latest/topics/shell.html#invoking-the-shell-from-spiders-to-inspect-responses]
+  ```cmd
+  from scrapy.shell import inspect_response
+  inspect_response(response, self)
+  ```
+  
 ### Scraping Resources
 | Command | Description |
 | ------- | ----------- |
 | [Requestbin](https://requestbin.com/) | Collect HTTP or webhook requests (code testing) |
-
 
   
  ### Discord
