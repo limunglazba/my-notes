@@ -28,10 +28,10 @@ import scrapy
 
 class TestSpider(scrapy.Spider):
     name = 'test'
-    start_urls = [<url_for_scraping>]
+    start_urls = ['<url_for_scraping>']
 
     def parse(self, response):
-        title = response.css('.test-css').extract()
+        title = response.css('<.test-css>').extract()
         yield {'titletext': title}
 
 ```
