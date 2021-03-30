@@ -107,6 +107,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 #### Selectors & scraping
 - css and xpath selectors can be used in combination in Scrapy
+- be careful: scrapy has its own regex syntax! see the command below
 
 | Command | Description |
 | ------- | ----------- |
