@@ -6,7 +6,11 @@
 
 ### Definition
 
-Asyncio is a library to write concurrent code (_asynchronous functions or coroutines_) using the **async/await syntax.**
+- Asyncio is a library to write concurrent code (_asynchronous functions or coroutines_) using the **async/await syntax.** 
+- Functions (coroutines) are defined as **async def** instead of **def**
+- Concept: 
+    (1) establish the main loop (event loop) 
+    (2) add tasks to the loop and define how the loop runs them
 
 ```cmd
 import asyncio
