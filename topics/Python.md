@@ -66,9 +66,9 @@ list(a)[0]
 | `City = namedtuple('City', 'name country population coordinates')` <br> `tokyo = City('Tokyo', 'JP', 36.933, (35.689722, 139.691667))` | Creating a named tuple class *City* with 4 attributes|
 
 ### Code Optimisation
-**- Apply to a function with @profile
-- Profiles the function using cProfile, and prints out a report**
-- Example from [S. Mathôt](https://www.youtube.com/watch?v=8qEnExGLZfY&ab_channel=SebastiaanMath%C3%B4t)
+- Apply to a function with @profile
+- Profiles the function using cProfile, and prints out a report
+- Example below is from [S. Mathôt](https://www.youtube.com/watch?v=8qEnExGLZfY&ab_channel=SebastiaanMath%C3%B4t)
 ```python
 import cProfile, pstats, io
 
