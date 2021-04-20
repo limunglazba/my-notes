@@ -65,6 +65,34 @@ list(a)[0]
 | `from collections import namedtuple` | Importing named tuple from collections package |
 | `City = namedtuple('City', 'name country population coordinates')` <br> `tokyo = City('Tokyo', 'JP', 36.933, (35.689722, 139.691667))` | Creating a named tuple class *City* with 4 attributes|
 
+### Code Optimisation
+**- Apply to a function with @profile
+- Profiles the function using cProfile, and prints out a report**
+- Example from [S. Mathôt](https://www.youtube.com/watch?v=8qEnExGLZfY&ab_channel=SebastiaanMath%C3%B4t)
+```python
+import cProfile, pstats, io
+
+def profile(fnc):
+    
+    """A decorator that uses cProfile to profile a function"""
+    
+    def inner(*args, **kwargs):
+        
+        pr = cProfile.Profile()
+        pr.enable()
+        retval = fnc(*args, **kwargs)
+        pr.disable()
+        s = io.StringIO()
+        sortby = 'cumulative'
+        ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+        ps.print_stats()
+        print(s.getvalue())
+        return retval
+
+    return inner
+```
+
+
 ### Various
 
 | Command | Description |
