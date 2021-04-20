@@ -68,7 +68,7 @@ list(a)[0]
 ### Code Optimisation
 - Apply to a function with @profile
 - Profiles the function using cProfile, and prints out a report
-- Example below is from [S. Mathôt](https://www.youtube.com/watch?v=8qEnExGLZfY&ab_channel=SebastiaanMath%C3%B4t)
+- Example below from [S. Mathôt](https://www.youtube.com/watch?v=8qEnExGLZfY&ab_channel=SebastiaanMath%C3%B4t)
 ```python
 import cProfile, pstats, io
 
