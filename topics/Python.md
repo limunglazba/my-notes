@@ -1,11 +1,13 @@
 Python
 ============
 
-### Installation
+### Installation & Setup
 | Command | Description |
 | ------- | ----------- |
 | `pip freeze > requirements.txt` | Save installed Python packages in a new txt file |
 | `pip install -r requirements.txt` | Install these packages in a new environment |
+| `import sys
+sys.path` | The list of directories searched by Python |
 
 ### System
 | Command | Description |
